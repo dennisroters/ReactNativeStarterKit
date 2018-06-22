@@ -11,6 +11,7 @@ import {
   Text,
   View
 } from 'react-native';
+import {Icon} from "native-base";
 
 const instructions = Platform.select({
   ios: 'Press Cmd+R to reload,\n' +
@@ -24,6 +25,7 @@ export default class App extends Component<Props> {
   render() {
     return (
       <View style={styles.container}>
+        <Icon type="MaterialCommunityIcons" name="rocket" />
         <Text style={styles.welcome}>
           Welcome to ReactNativeStarterKit!
         </Text>
